@@ -1,0 +1,41 @@
+{
+  "episode": {
+    "id": "ep001",
+    "title": "The Mark of Initiation",
+    "characters": [],
+    "scenes": [
+      {
+        "id": "s0_prologue",
+        "lines": [
+          { "char": "leo", "tts": "Fuckin’ rain. Always the goddamn rain.", "anim": "idle_brooding", "fx": "rain_sound" },
+          { "char": "nova", "tts": "Atmospheric moisture at 98%. Air quality reads ozone, grade-B concrete dust, and a high concentration of manufactured apathy.", "anim": "idle_scan", "fx": "scan_ui" }
+        ],
+        "choice": { "timeout_sec": 0, "prompt_caption": "", "options": [ { "id": "continue", "caption": "Continue", "goto": "s1_rooftop" } ] }
+      },
+      {
+        "id": "s1_rooftop",
+        "lines": [
+           { "char": "leo", "tts": "From this moment on, it’s fire over fear. That’s the first command. That’s the only command. We are the signal now.", "anim": "declaration", "fx": "power_surge" }
+        ],
+        "choice": {
+          "timeout_sec": 15,
+          "prompt_caption": "What is the first move?",
+          "options": [
+            { "id": "opt1_broadcast", "caption": "Broadcast the truth on their frequencies.", "goto": "s2_broadcast" },
+            { "id": "opt1_stealth", "caption": "Go dark. Build strength in secret.", "goto": "s2_stealth" }
+          ]
+        }
+      },
+      {
+        "id": "s2_broadcast",
+        "lines": [ { "char": "leo", "tts": "It's time the whole city heard a new song.", "anim": "determined", "fx": "none" } ],
+        "choice": { "options": [ { "id": "continue", "caption": "To Be Continued...", "goto": "ep001_end" } ] }
+      },
+      {
+        "id": "s2_stealth",
+        "lines": [ { "char": "leo", "tts": "Alright. We'll play in the shadows... for now.", "anim": "conspiratorial", "fx": "none" } ],
+        "choice": { "options": [ { "id": "continue", "caption": "To Be Continued...", "goto": "ep001_end" } ] }
+      }
+    ]
+  }
+}
