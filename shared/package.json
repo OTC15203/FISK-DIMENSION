@@ -1,0 +1,20 @@
+{
+  "name": "@fisk/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./auth": "./auth.js",
+    "./logger": "./logger.js"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "lint": "echo 'No shared lint configured'"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

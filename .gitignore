@@ -1,0 +1,31 @@
+# Node
+node_modules/
+.yarn/*
+!.yarn/releases/
+!.yarn/plugins/
+!.yarn/sdks/
+!.yarn/versions/
+.pnp.*
+yarn-error.log
+
+# Env files
+*.env
+deploy/env/.env
+
+# Logs
+logs/*.log
+
+# Build artifacts
+frontend/dist
+backend/dist
+shared/dist
+
+# Unity generated
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+UserSettings/
+*.csproj
+*.sln

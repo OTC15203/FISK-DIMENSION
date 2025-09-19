@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Orbitron', system-ui, sans-serif;
+  background: radial-gradient(circle at 20% 20%, rgba(50, 255, 156, 0.15), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(155, 95, 255, 0.25), transparent 55%),
+    radial-gradient(circle at 50% 70%, rgba(77, 208, 255, 0.18), transparent 45%),
+    #020109;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.glow-border {
+  box-shadow: 0 0 25px rgba(50, 255, 156, 0.3), 0 0 45px rgba(155, 95, 255, 0.25);
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.bg-dimension-grid {
+  background-image: linear-gradient(rgba(155, 95, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 208, 255, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.aurora {
+  background: linear-gradient(120deg, rgba(50, 255, 156, 0.35), rgba(155, 95, 255, 0.45), rgba(77, 208, 255, 0.35));
+  filter: blur(120px);
+  opacity: 0.6;
+}
+
+.cyber-button {
+  background: radial-gradient(circle at 30% 30%, rgba(50, 255, 156, 0.8), rgba(155, 95, 255, 0.8));
+  border: 1px solid rgba(77, 208, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 25px rgba(77, 208, 255, 0.4);
+}
